@@ -1,0 +1,35 @@
+{
+    "FirstNameIsSubmittedSuccessfully": [
+        {
+            "FirstName": "Priya"
+        },
+        {
+            "FirstName": "Minnie"
+        },
+        {
+            "FirstName": "Maxie"
+        }
+    ],
+    "FirstNameLastNameIsSubmittedSuccessfully": [
+        {
+            "FirstName": "Priya",
+            "LastName": "Go"
+        },
+        {
+            "FirstName": "Tyrion",
+            "LastName": "Lannister"
+        }
+    ],
+    "FirstNameLastNameGenderIsSubmittedSuccessfully": [
+        {
+            "Gender": "female",
+            "FirstName": "Priya",
+            "LastName": "Go"
+        },
+        {
+            "Gender": "male",
+            "FirstName": "Tyrion",
+            "LastName": "Lannister"
+        }
+    ]
+}
