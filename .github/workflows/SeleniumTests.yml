@@ -25,6 +25,10 @@ jobs:
     - name: Run PowerShell Script
       run: |
         dir env:
+        
+        dir $env:RUNNER_WORKSPACE
+
+        dir $env:GITHUB_WORKSPACE
 
     - name: Restore dependencies
       run: dotnet restore
