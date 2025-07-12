@@ -15,9 +15,13 @@ public static class TestDataProvider
         //}
 
         //Console.WriteLine($"Reading test data from: {testDataFile}");
-        
+
         // Read the JSON file and deserialize it into a list of TestCaseData
-        var jsonData = File.ReadAllText(@$"TestData\{testDataFile}");
+
+        var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", testDataFile);
+        Console.WriteLine($"Reading test data from: {filePath}");
+
+        var jsonData = File.ReadAllText(filePath);
         var testDataList = JsonConvert.DeserializeObject<List<T>>(jsonData);
 
         foreach (var data in testDataList)

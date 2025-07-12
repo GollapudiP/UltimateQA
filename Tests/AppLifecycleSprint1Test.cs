@@ -29,7 +29,7 @@ namespace UltimateQA.Tests
         [Test, Order(2), TestCaseSource(nameof(FirstNameIsSubmittedSuccessfullyTestData))]
         public void FirstNameIsSubmittedSuccessfully(Sprint1TestData user)
         {
-           var test =  Report.CreateTest("FirstNameIsSubmittedSuccessfully");
+            var test = Report.CreateTest("FirstNameIsSubmittedSuccessfully");
 
             var page = new AppLifecycleSprint1Page(Driver);
             page.GoToUltimateQA();
@@ -111,7 +111,7 @@ namespace UltimateQA.Tests
             page.EnterFirstName(data.FirstName);
             page.EnterLastName(data.LastName);
             page.SubmitDetails();
-            AssertPageTitle("Homepage - Ultimate QA12");
+            AssertPageTitle("Homepage - Ultimate QA");
             AssertPageUrl($"ultimateqa.com/?gender={data.Gender}&firstname={data.FirstName}&lastname={data.LastName}");
 
             test.Log(TestStatus.Pass, $"First name '{data.FirstName}', last name '{data.LastName}', and gender '{data.Gender}' submitted successfully and page title and URL verified.");
