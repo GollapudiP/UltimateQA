@@ -45,8 +45,3 @@ jobs:
       with:
         name: test-results
         path: '**/*.html'
-    
-    - name: Move Test Report to docs folder
-      run: |
-        mkdir -p docs
-        cp UltimateQA/bin/Debug/net8.0/UltimateQATestReport.html docs/TestResults.html
