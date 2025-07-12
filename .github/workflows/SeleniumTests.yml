@@ -21,6 +21,10 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    
+    - name: Run PowerShell Script
+      run: |
+        dir env:
 
     - name: Restore dependencies
       run: dotnet restore
