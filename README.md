@@ -1,4 +1,4 @@
-# Selenium WebDriver Automation with C#, NUnit, JSON Test Data, POM & ExtentReports
+# Selenium WebDriver Automation with C#, NUnit, JSON Test Data, Page Object Model (POM) & ExtentReports
 
 This repository contains a structured automation framework using:
 
@@ -8,21 +8,6 @@ This repository contains a structured automation framework using:
 - JSON-based Test Data  
 - ExtentReports for HTML Reporting  
 - GitHub Actions for Continuous Integration
-
----
-
-## Project Structure
-
-UltimateQA/
-│
-├── Utilities/ # WebDriver setup logic, JSON reader, Report logger, Configuration manager
-├── Pages/ # Page Object classes
-├── Tests/ # NUnit test classes
-├── TestData/ # JSON files containing test data
-├── appsettings.json # Config file (browser, URLs, etc.)
-├── .github/workflows/ # GitHub Actions CI pipeline
-├── UltimateQA.csproj
-└── README.md
 
 ---
 
