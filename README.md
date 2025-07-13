@@ -24,6 +24,9 @@ UltimateQA/
 ├ UltimateQA.csproj
 └ README.md
 
+
+<pre lang="md"> <code> ```text SeleniumTests/ │ ├── Drivers/ # WebDriver setup logic ├── Pages/ # Page Object classes ├── Tests/ # NUnit test classes ├── TestData/ # JSON files for test data ├── Utilities/ # Helpers: JSON reader, reporting, etc. ├── Reports/ # ExtentReports output ├── appsettings.json # Config file for environment & browser ├── .github/ │ └── workflows/ # GitHub Actions workflows │ └── dotnet-tests.yml ├── SeleniumTests.csproj └── README.md ``` </code> </pre>
+
 ---
 
 ## Technologies Used
